@@ -6,7 +6,7 @@ import Database from 'better-sqlite3';
  * @param {Request} request - The incoming HTTP request.
  * @returns {Promise<Response>} - The HTTP response containing the average mandates per state or an error message.
  */
-export async function GET(request) {
+export async function GET() {
   try {
     // Open the SQLite database in read-only mode
     const db = new Database('counties_optimized.db', { readonly: true });
